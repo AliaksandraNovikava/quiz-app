@@ -7,14 +7,24 @@
 body {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: #313131;
   background: linear-gradient(#b970d3, #5a44c9);
 }
 
 header {
-  background-color: transparent;
-  color: #fff;
+  background-color: #b875d1;
+  color: white;
   text-align: center;
   padding: 20px;
+  margin-bottom: 40px;
+  border-radius: 0 0 15px 15px;
+  box-shadow: #785b80aa 0px 7px 29px 0px;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+main {
 }
 
 h1 {
@@ -23,4 +33,56 @@ h1 {
 
 .placeholder {
   height: 800px;
+}
+
+.card {
+  width: 90%;
+  padding: 50px;
+  margin: auto;
+  margin-bottom: 40px;
+  border-radius: 15px;
+  background-color: #fff;
+  text-align: center;
+  position: relative;
+  box-shadow: #5042ab 0px 7px 29px 0px;
+}
+
+.bookmark {
+  width: 40px;
+  position: absolute;
+  top: -15px;
+  right: 20px;
+  filter: invert(98%) sepia(58%) saturate(5382%) hue-rotate(181deg);
+}
+
+.question {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.show-answer {
+  padding: 10px 20px;
+  margin: 30px 0;
+  border: none;
+  border-radius: 10px;
+  background-color: #7665de;
+  color: #fff;
+}
+.show-answer:hover {
+  background-color: #5e4eca;
+}
+.answer {
+  margin-bottom: 40px;
+}
+.tags {
+  list-style: none;
+  margin-top: 10px;
+}
+.tags li {
+  display: inline;
+  padding: 10px;
+  margin-right: 5px;
+  border-radius: 5px;
+  background-color: #d9d4f9;
+  font-size: 12px;
 }
