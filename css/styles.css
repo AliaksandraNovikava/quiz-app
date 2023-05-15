@@ -86,3 +86,33 @@ h1 {
   background-color: #d9d4f9;
   font-size: 12px;
 }
+
+footer {
+  position: sticky;
+  bottom: 0;
+  box-shadow: #838383aa 0px 7px 29px 0px;
+}
+.footer-nav {
+  display: flex;
+  background-color: #fff;
+  border-radius: 15px 15px 0 0;
+}
+.footer-nav li {
+  list-style: none;
+  width: 33.3%;
+  padding: 10px;
+  text-align: center;
+}
+.footer-nav-icon {
+  height: 30px;
+  filter: invert(51%) sepia(36%) saturate(6219%) hue-rotate(225deg);
+}
+.footer-nav-icon:hover {
+  filter: invert(50%) sepia(89%) saturate(268%) hue-rotate(239deg);
+}
+.footer-nav .active {
+  filter: invert(50%) sepia(89%) saturate(268%) hue-rotate(239deg);
+}
+.footer-nav a {
+  display: block;
+}
