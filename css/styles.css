@@ -37,7 +37,7 @@ h1 {
 
 .card {
   width: 90%;
-  padding: 50px;
+  padding: 50px 45px 45px;
   margin: auto;
   margin-bottom: 40px;
   border-radius: 15px;
@@ -85,6 +85,9 @@ h1 {
 .tags {
   list-style: none;
   margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 .tags li {
   display: inline;
