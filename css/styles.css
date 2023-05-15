@@ -25,7 +25,6 @@ header {
 }
 
 main {
-  height: 100vh;
 }
 
 h1 {
@@ -40,6 +39,7 @@ h1 {
   width: 90%;
   padding: 50px;
   margin: auto;
+  margin-bottom: 40px;
   border-radius: 15px;
   background-color: #fff;
   text-align: center;
@@ -52,9 +52,7 @@ h1 {
   position: absolute;
   top: -15px;
   right: 20px;
-}
-#icon {
-  fill: #d9d4f9;
+  filter: invert(98%) sepia(58%) saturate(5382%) hue-rotate(181deg);
 }
 
 .question {
