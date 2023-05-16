@@ -7,7 +7,3 @@ const addBookmark = document.querySelector('[data-js="bookmark-button"]');
 addAnswerButton.addEventListener("click", () => {
   addHiddenAnswer.classList.toggle("answer");
 });
-
-addBookmark.addEventListener("click", () => {
-  addBookmark.classList.toggle("bookmarked");
-});
