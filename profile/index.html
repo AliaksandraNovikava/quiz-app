@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <script src="../js/index.js" defer></script>
+    <title>Quiz App - Bookmarks</title>
+  </head>
+  <body>
+    <header>
+      <h1>Quiz App</h1>
+    </header>
+    <main class="main-profile">
+      <figure class="profile">
+        <img
+          src="../assets/novikava_a.png"
+          alt="This is me"
+          class="profile__img"
+        />
+        <figcaption class="profile__intro">
+          <h2>Aliaksandra Novikava</h2>
+          <ul class="profile__list">
+            <li><strong>GitHub:</strong> AliaksandraNovikava</li>
+            <li><strong>E-Mail:</strong> my-email@email.com</li>
+            <li><strong>Location:</strong> Dortmund</li>
+          </ul>
+        </figcaption>
+      </figure>
+      <section class="stats">
+        <img
+          class="stats__icon"
+          src="../assets/clipboard-question-solid.svg"
+          alt="bookmark"
+        />
+        <h3><span class="faded-text">Your</span><br />Questions</h3>
+        <p class="stats__counter">3</p>
+      </section>
+      <section class="stats">
+        <img
+          class="stats__icon"
+          src="../assets/bookmark-solid.svg"
+          alt="bookmark"
+        />
+        <h3><span class="faded-text">Your</span><br />Bookmarks</h3>
+        <p class="stats__counter">2</p>
+      </section>
+      <section class="settings">
+        <h3 class="faded-text">Settings</h3>
+        <section class="toggle">
+          <h3>Dark Mode</h3>
+          <input type="checkbox" class="checkbox" id="checkbox" />
+          <label for="checkbox" class="checkbox-label">
+            <img
+              class="checkbox__icon"
+              src="../assets/moon-regular.svg"
+              alt="bookmark"
+            />
+            <img
+              class="checkbox__icon"
+              src="../assets/sun-regular.svg"
+              alt="bookmark"
+            />
+            <span class="ball"></span>
+          </label>
+        </section>
+      </section>
+    </main>
+    <footer>
+      <nav>
+        <ul class="footer-nav">
+          <li>
+            <a href="/index.html"
+              ><img
+                class="footer-nav-icon"
+                src="../assets/house-solid.svg"
+                alt="homepage icon"
+            /></a>
+          </li>
+          <li>
+            <a href="../bookmarks/index.html"
+              ><img
+                class="footer-nav-icon"
+                src="../assets/bookmark-solid.svg"
+                alt="bookmark"
+            /></a>
+          </li>
+          <li class="active">
+            <a href="../profile/index.html"
+              ><img
+                class="footer-nav-icon"
+                src="../assets/user-solid.svg"
+                alt="homepage icon"
+            /></a>
+          </li>
+        </ul>
+      </nav>
+    </footer>
+  </body>
+</html>
