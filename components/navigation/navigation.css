@@ -1,9 +1,3 @@
-footer {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  box-shadow: #838383aa 0px 7px 29px 0px;
-}
 .footer-nav {
   display: flex;
   background-color: #fff;
