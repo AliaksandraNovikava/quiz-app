@@ -1,0 +1,47 @@
+.stats {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  padding: 15px;
+  margin: auto;
+  margin-bottom: 15px;
+  border-radius: 15px;
+  background-color: #fff;
+  text-align: center;
+  position: relative;
+  box-shadow: var(--box-shadow);
+}
+.stats img {
+  width: 15%;
+}
+
+.stats h3,
+.settings h3 {
+  font-size: 16px;
+  width: 60%;
+  text-align: left;
+}
+
+.faded-text {
+  text-transform: uppercase;
+  opacity: 40%;
+  font-weight: 300;
+}
+
+.stats__icon {
+  height: 30px;
+  filter: var(--primary-color-filter);
+}
+
+.stats__counter {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--primary-color);
+  color: #fff;
+  font-weight: 600;
+}
