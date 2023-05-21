@@ -1,0 +1,28 @@
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  box-shadow: #838383aa 0px 7px 29px 0px;
+}
+.footer-nav {
+  display: flex;
+  background-color: #fff;
+  border-radius: 15px 15px 0 0;
+}
+.footer-nav li {
+  list-style: none;
+  width: 33.3%;
+  padding: 10px;
+  text-align: center;
+}
+.footer-nav__icon {
+  height: 30px;
+  filter: var(--primary-color-filter);
+}
+.footer-nav__icon:hover,
+.footer-nav .active {
+  filter: var(--secondary-color-filter);
+}
+.footer-nav a {
+  display: block;
+}

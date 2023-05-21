@@ -1,0 +1,62 @@
+@import "../components/navigation/navigation.css";
+@import "../components/card/card.css";
+@import "../components/button/button.css";
+@import "../components/profile/profile.css";
+@import "../components/stats/stats.css";
+@import "../components/settings/settings.css";
+
+:root {
+  --primary-color: #7665de;
+  --secondary-color: #b875d1;
+  --light-color: #d9d4f9;
+  --primary-color-filter: invert(51%) sepia(36%) saturate(6219%)
+    hue-rotate(225deg);
+  --secondary-color-filter: invert(50%) sepia(89%) saturate(268%)
+    hue-rotate(239deg);
+  --light-color-filter: invert(98%) sepia(58%) saturate(5382%)
+    hue-rotate(181deg);
+  --gradient: linear-gradient(#b970d3, #5a44c9);
+  --box-shadow: #5042ab 0px 7px 29px 0px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: #313131;
+  background: var(--gradient);
+}
+
+header {
+  background-color: var(--secondary-color);
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 40px;
+  border-radius: 0 0 15px 15px;
+  box-shadow: #785b80aa 0px 7px 29px 0px;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+main {
+  padding-bottom: 50px;
+  min-height: calc(100vh - 112px);
+}
+
+h1 {
+  font-size: 24px;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  box-shadow: #838383aa 0px 7px 29px 0px;
+}
