@@ -1,9 +1,9 @@
-@import "../components/navigation/navigation.css";
-@import "../components/card/card.css";
-@import "../components/button/button.css";
-@import "../components/profile/profile.css";
-@import "../components/stats/stats.css";
-@import "../components/settings/settings.css";
+@import "/components/navigation/navigation.css";
+@import "/components/card/card.css";
+@import "/components/button/button.css";
+@import "/components/profile/profile.css";
+@import "/components/stats/stats.css";
+@import "/components/settings/settings.css";
 
 :root {
   --primary-color: #7665de;
