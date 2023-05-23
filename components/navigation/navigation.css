@@ -1,0 +1,22 @@
+.footer-nav {
+  display: flex;
+  background-color: #fff;
+  border-radius: 15px 15px 0 0;
+}
+.footer-nav li {
+  list-style: none;
+  width: 33.3%;
+  padding: 10px;
+  text-align: center;
+}
+.footer-nav__icon {
+  height: 30px;
+  filter: var(--primary-color-filter);
+}
+.footer-nav__icon:hover,
+.footer-nav .active {
+  filter: var(--secondary-color-filter);
+}
+.footer-nav a {
+  display: block;
+}

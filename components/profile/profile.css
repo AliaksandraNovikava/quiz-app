@@ -1,0 +1,27 @@
+.profile {
+  width: 90%;
+  margin: auto;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  color: #fff;
+}
+.profile__list {
+  list-style: none;
+}
+.profile h2 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.profile__img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+}
+
+.profile__intro {
+  font-size: 14px;
+}
