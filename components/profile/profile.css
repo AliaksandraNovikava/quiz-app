@@ -32,9 +32,3 @@
 .profile__intro {
   font-size: 14px;
 }
-
-@media (min-width: 768px) {
-  .main-profile--vp-lg {
-    padding: 0 5vw;
-  }
-}
