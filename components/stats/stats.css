@@ -13,19 +13,21 @@
   box-shadow: var(--box-shadow);
 }
 .stats img {
-  width: 15%;
+  width: 10%;
 }
 
 .stats h3 {
   font-size: 16px;
-  width: 60%;
+  width: 80%;
   text-align: left;
+  padding-left: 10px;
 }
 
 .faded-text {
   text-transform: uppercase;
   opacity: 40%;
   font-weight: 300;
+  text-align: left;
 }
 
 .stats__icon {
@@ -34,7 +36,7 @@
 }
 
 .stats__counter {
-  width: 40px;
+  width: 43px;
   height: 40px;
   border-radius: 50%;
   display: flex;

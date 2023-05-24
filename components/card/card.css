@@ -10,6 +10,12 @@
   box-shadow: var(--box-shadow);
 }
 
+.dark-card {
+  background-color: #4c3874;
+  color: #fff;
+  box-shadow: none;
+}
+
 .card__bookmark,
 .card__bookmark-active {
   width: 40px;
