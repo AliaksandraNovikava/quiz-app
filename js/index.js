@@ -7,3 +7,13 @@
 // addAnswerButton.addEventListener("click", () => {
 //   addHiddenAnswer.classList.toggle("answer");
 // });
+
+const darkMode = document.querySelector('[data-js="checkbox"]');
+
+darkMode.addEventListener("click", () => {
+  if (document.body.classList.contains("body-dark")) {
+    document.body.classList.remove("body-dark");
+  } else {
+    document.body.classList.add("body-dark");
+  }
+});
