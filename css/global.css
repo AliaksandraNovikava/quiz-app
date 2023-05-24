@@ -16,6 +16,7 @@
   --light-color-filter: invert(98%) sepia(58%) saturate(5382%)
     hue-rotate(181deg);
   --gradient: linear-gradient(#b970d3, #5a44c9);
+  --dark-background-color: #33264e;
   --box-shadow: #5042ab 0px 7px 29px 0px;
 }
 
@@ -32,6 +33,10 @@ body {
   background: var(--gradient);
 }
 
+.body-dark {
+  background-color: var(--dark-background-color);
+}
+
 header {
   background-color: var(--secondary-color);
   color: white;
@@ -45,9 +50,18 @@ header {
   z-index: 1;
 }
 
+.header-dark {
+  background-color: #3c2c5b;
+  box-shadow: none;
+}
+
 main {
   padding-bottom: 50px;
   min-height: calc(100vh - 112px);
+}
+.main__cards {
+  max-width: 1200px;
+  margin: auto;
 }
 
 h1 {
