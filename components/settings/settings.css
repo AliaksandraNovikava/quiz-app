@@ -7,9 +7,14 @@
   border-radius: 15px;
   background-color: var(--secondary-color);
   color: #fff;
-  text-align: center;
+  text-align: left;
   position: relative;
   box-shadow: var(--box-shadow);
+}
+
+.settings h3 {
+  font-size: 16px;
+  width: 60%;
 }
 
 .toggle {

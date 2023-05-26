@@ -13,57 +13,66 @@
       <h1>Quiz App</h1>
     </header>
     <main class="main-profile">
-      <figure class="profile">
-        <img
-          src="/assets/novikava_a.png"
-          alt="This is me"
-          class="profile__img"
-        />
-        <figcaption class="profile__intro">
-          <h2>Aliaksandra Novikava</h2>
-          <ul class="profile__list">
-            <li><strong>GitHub:</strong> AliaksandraNovikava</li>
-            <li><strong>E-Mail:</strong> my-email@email.com</li>
-            <li><strong>Location:</strong> Dortmund</li>
-          </ul>
-        </figcaption>
-      </figure>
-      <section class="stats">
-        <img
-          class="stats__icon"
-          src="/assets/clipboard-question-solid.svg"
-          alt="bookmark"
-        />
-        <h3><span class="faded-text">Your</span><br />Questions</h3>
-        <p class="stats__counter">3</p>
+      <section class="main-profile__sidebar">
+        <figure class="profile">
+          <img
+            src="/assets/novikava_a.png"
+            alt="This is me"
+            class="profile__img"
+          />
+          <figcaption class="profile__intro">
+            <h2>Aliaksandra Novikava</h2>
+            <ul class="profile__list">
+              <li><strong>GitHub:</strong> AliaksandraNovikava</li>
+              <li><strong>E-Mail:</strong> my-email@email.com</li>
+              <li><strong>Location:</strong> Dortmund</li>
+            </ul>
+          </figcaption>
+        </figure>
       </section>
-      <section class="stats">
-        <img
-          class="stats__icon"
-          src="/assets/bookmark-solid.svg"
-          alt="bookmark"
-        />
-        <h3><span class="faded-text">Your</span><br />Bookmarks</h3>
-        <p class="stats__counter">2</p>
-      </section>
-      <section class="settings">
-        <h3 class="faded-text">Settings</h3>
-        <section class="toggle">
-          <h3>Dark Mode</h3>
-          <input type="checkbox" class="checkbox" id="checkbox" />
-          <label for="checkbox" class="checkbox-label">
-            <img
-              class="checkbox__icon"
-              src="/assets/moon-regular.svg"
-              alt="bookmark"
+      <section class="main-profile--vp-lg">
+        <section class="stats">
+          <img
+            class="stats__icon"
+            src="/assets/clipboard-question-solid.svg"
+            alt="bookmark"
+          />
+          <h3><span class="faded-text">Your</span><br />Questions</h3>
+          <p class="stats__counter">3</p>
+        </section>
+        <section class="stats">
+          <img
+            class="stats__icon"
+            src="/assets/bookmark-solid.svg"
+            alt="bookmark"
+          />
+          <h3><span class="faded-text">Your</span><br />Bookmarks</h3>
+          <p class="stats__counter">2</p>
+        </section>
+        <section class="settings">
+          <h3 class="faded-text">Settings</h3>
+          <section class="toggle">
+            <h3>Dark Mode</h3>
+            <input
+              type="checkbox"
+              class="checkbox"
+              id="checkbox"
+              data-js="checkbox"
             />
-            <img
-              class="checkbox__icon"
-              src="/assets/sun-regular.svg"
-              alt="bookmark"
-            />
-            <span class="ball"></span>
-          </label>
+            <label for="checkbox" class="checkbox-label">
+              <img
+                class="checkbox__icon"
+                src="/assets/moon-regular.svg"
+                alt="bookmark"
+              />
+              <img
+                class="checkbox__icon"
+                src="/assets/sun-regular.svg"
+                alt="bookmark"
+              />
+              <span class="ball"></span>
+            </label>
+          </section>
         </section>
       </section>
     </main>
@@ -71,7 +80,7 @@
       <nav>
         <ul class="footer-nav">
           <li>
-            <a href="/index.html"
+            <a href="/index.html" area-label="Homepage"
               ><img
                 class="footer-nav__icon"
                 src="/assets/house-solid.svg"
@@ -79,7 +88,7 @@
             /></a>
           </li>
           <li>
-            <a href="/bookmarks/index.html"
+            <a href="/bookmarks/index.html" area-label="Bookmarks page"
               ><img
                 class="footer-nav__icon"
                 src="/assets/bookmark-solid.svg"
@@ -87,11 +96,11 @@
             /></a>
           </li>
           <li class="footer-nav__icon--active">
-            <a href="/profile/index.html"
+            <a href="/profile/index.html" area-label="Profile page"
               ><img
                 class="footer-nav__icon"
                 src="/assets/user-solid.svg"
-                alt="homepage icon"
+                alt="profile icon"
             /></a>
           </li>
         </ul>

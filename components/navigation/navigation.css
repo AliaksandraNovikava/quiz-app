@@ -14,7 +14,7 @@
   filter: var(--primary-color-filter);
 }
 .footer-nav__icon:hover,
-.footer-nav .active {
+.footer-nav__icon--active {
   filter: var(--secondary-color-filter);
 }
 .footer-nav a {

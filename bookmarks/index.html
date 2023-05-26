@@ -12,46 +12,52 @@
     <header>
       <h1>Quiz App</h1>
     </header>
-    <main>
-      <article class="card">
-        <img
-          class="card__bookmark-active"
-          src="/assets/bookmark-solid.svg"
-          alt="bookmark"
-          data-js="bookmark-button"
-        />
-        <h2 class="card__question">What property flips the axes in flexbox?</h2>
-        <button class="card__button" data-js="show-answer-button">
-          Show answer
-        </button>
-        <p class="card__answer" data-js="hidden-answer">flex-direction</p>
-        <ul class="tags">
-          <li>#html</li>
-          <li>#flexbox</li>
-          <li>#css</li>
-        </ul>
-      </article>
-      <article class="card">
-        <img
-          class="card__bookmark-active"
-          src="/assets/bookmark-solid.svg"
-          alt="bookmark"
-        />
-        <h2 class="card__question">What property flips the axes in flexbox?</h2>
-        <button class="card__button">Show answer</button>
-        <p class="card__answer" hidden>flex-direction</p>
-        <ul class="tags">
-          <li>#html</li>
-          <li>#flexbox</li>
-          <li>#css</li>
-        </ul>
-      </article>
+    <main class="main">
+      <section class="main__cards">
+        <article class="card">
+          <img
+            class="card__bookmark-active"
+            src="/assets/bookmark-solid.svg"
+            alt="bookmark"
+            data-js="bookmark-button"
+          />
+          <h2 class="card__question">
+            What property flips the axes in flexbox?
+          </h2>
+          <button class="card__button" data-js="show-answer-button">
+            Show answer
+          </button>
+          <p class="card__answer" data-js="hidden-answer">flex-direction</p>
+          <ul class="tags">
+            <li>#html</li>
+            <li>#flexbox</li>
+            <li>#css</li>
+          </ul>
+        </article>
+        <article class="card">
+          <img
+            class="card__bookmark-active"
+            src="/assets/bookmark-solid.svg"
+            alt="bookmark"
+          />
+          <h2 class="card__question">
+            What property flips the axes in flexbox?
+          </h2>
+          <button class="card__button">Show answer</button>
+          <p class="card__answer" hidden>flex-direction</p>
+          <ul class="tags">
+            <li>#html</li>
+            <li>#flexbox</li>
+            <li>#css</li>
+          </ul>
+        </article>
+      </section>
     </main>
     <footer>
       <nav>
         <ul class="footer-nav">
           <li>
-            <a href="/index.html"
+            <a href="/index.html" area-label="Homepage"
               ><img
                 class="footer-nav__icon"
                 src="/assets/house-solid.svg"
@@ -59,7 +65,7 @@
             /></a>
           </li>
           <li class="footer-nav__icon--active">
-            <a href="/bookmarks/index.html"
+            <a href="/bookmarks/index.html" area-label="Bookmarks page"
               ><img
                 class="footer-nav__icon"
                 src="/assets/bookmark-solid.svg"
@@ -67,11 +73,11 @@
             /></a>
           </li>
           <li>
-            <a href="/profile/index.html"
+            <a href="/profile/index.html" area-label="Profile page"
               ><img
                 class="footer-nav__icon"
                 src="/assets/user-solid.svg"
-                alt="homepage icon"
+                alt="profile icon"
             /></a>
           </li>
         </ul>

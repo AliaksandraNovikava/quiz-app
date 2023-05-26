@@ -10,6 +10,12 @@
   box-shadow: var(--box-shadow);
 }
 
+.card-dark {
+  background-color: #4c3874;
+  color: #fff;
+  box-shadow: none;
+}
+
 .card__bookmark,
 .card__bookmark-active {
   width: 40px;
@@ -49,4 +55,8 @@
   border-radius: 5px;
   background-color: var(--light-color);
   font-size: 12px;
+}
+
+.tags-dark li {
+  color: #313131;
 }
