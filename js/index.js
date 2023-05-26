@@ -1,8 +1,9 @@
 const AnswerButton = document.querySelector('[data-js="show-answer-button"]');
 const addAnswer = document.querySelector('[data-js="hidden-answer"]');
 const Bookmark = document.querySelector('[data-js="bookmark"]');
+const submitNewCard = document.querySelector('[submit-new-card"]');
 
-addAnswerButton.addEventListener("click", function handleClick() {
+AnswerButton.addEventListener("click", function handleClick() {
   addAnswer.classList.toggle("card__answer");
 
   const initialText = "Show answer";

@@ -12,7 +12,7 @@
     <header>
       <h1>Quiz App</h1>
     </header>
-    <main class="main">
+    <main class="main__form">
       <h2 class="form-title" id="form-title">Create a new card</h2>
       <p class="form-decription" id="form-description">
         Please fill out this form to create a new card.
@@ -25,16 +25,25 @@
           aria-describedby="form-description"
         >
           <label class="label" for="form-cardQuestion">Your question:</label>
-          <textarea name="form-cardQuestion" id="form-cardQuestion" rows="5">
-          </textarea>
+          <textarea name="form-cardQuestion" rows="3"></textarea>
           <label class="label" for="form-cardAnswer">Your answer:</label>
-          <textarea name="form-cardAnswer" id="form-cardAnswer" rows="5">
-          </textarea
-          ><label for="form-cardTag">Tag:</label>
-          <input type="text" name="form-cardTag" id="form-cardTag" />
+          <textarea name="form-cardAnswer" rows="3"></textarea>
+          <label for="form-cardTag">Tag:</label>
+          <input type="text" name="form-cardTag" />
 
-          <button type="submit" class="card__button">Submit</button>
+          <button
+            type="submit"
+            class="card__button"
+            name="submit-new-card"
+            data-js="submit-new-card"
+          >
+            Submit
+          </button>
         </form>
+      </section>
+      <section class="new-card-container">
+        <h2 class="form-title">Your new cards</h2>
+        <ul data-js="new-cards"></ul>
       </section>
     </main>
     <footer>
@@ -60,7 +69,7 @@
             <a href="/form/index.html" area-label="Form page"
               ><img
                 class="footer-nav__icon"
-                src="/assets/bookmark-solid.svg"
+                src="/assets/circle-plus-solid.svg"
                 alt="add form"
             /></a>
           </li>
