@@ -4,6 +4,7 @@
 @import "/components/profile/profile.css";
 @import "/components/stats/stats.css";
 @import "/components/settings/settings.css";
+@import "/components/form/form.css";
 
 :root {
   --primary-color: #7665de;

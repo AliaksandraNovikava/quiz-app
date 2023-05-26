@@ -1,6 +1,4 @@
-const addAnswerButton = document.querySelector(
-  '[data-js="show-answer-button"]'
-);
+const AnswerButton = document.querySelector('[data-js="show-answer-button"]');
 const addAnswer = document.querySelector('[data-js="hidden-answer"]');
 const Bookmark = document.querySelector('[data-js="bookmark"]');
 
@@ -8,14 +6,10 @@ addAnswerButton.addEventListener("click", function handleClick() {
   addAnswer.classList.toggle("card__answer");
 
   const initialText = "Show answer";
-  if (
-    addAnswerButton.textContent
-      .toLowerCase()
-      .includes(initialText.toLowerCase())
-  ) {
-    addAnswerButton.textContent = "Hide answer";
+  if (AnswerButton.textContent.includes(initialText)) {
+    AnswerButton.textContent = "Hide answer";
   } else {
-    addAnswerButton.textContent = initialText;
+    AnswerButton.textContent = initialText;
   }
 });
 

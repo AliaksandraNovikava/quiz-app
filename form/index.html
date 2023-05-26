@@ -6,55 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/css/global.css" />
     <script src="/js/index.js" defer></script>
-    <title>Quiz App - Bookmarks</title>
+    <title>Quiz App - Form</title>
   </head>
   <body>
     <header>
       <h1>Quiz App</h1>
     </header>
     <main class="main">
-      <section class="main__cards">
-        <article class="card">
-          <img
-            class="card__bookmark-active"
-            src="/assets/bookmark-solid.svg"
-            alt="bookmark"
-            data-js="bookmark-button"
-          />
-          <h2 class="card__question">
-            What property flips the axes in flexbox?
-          </h2>
-          <button
-            type="button"
-            class="card__button"
-            data-js="show-answer-button"
-          >
-            Show answer
-          </button>
-          <p class="card__answer" data-js="hidden-answer">flex-direction</p>
-          <ul class="tags">
-            <li>#html</li>
-            <li>#flexbox</li>
-            <li>#css</li>
-          </ul>
-        </article>
-        <article class="card">
-          <img
-            class="card__bookmark-active"
-            src="/assets/bookmark-solid.svg"
-            alt="bookmark"
-          />
-          <h2 class="card__question">
-            What property flips the axes in flexbox?
-          </h2>
-          <button type="button" class="card__button">Show answer</button>
-          <p class="card__answer" hidden>flex-direction</p>
-          <ul class="tags">
-            <li>#html</li>
-            <li>#flexbox</li>
-            <li>#css</li>
-          </ul>
-        </article>
+      <h2 class="form-title" id="form-title">Create a new card</h2>
+      <p class="form-decription" id="form-description">
+        Please fill out this form to create a new card.
+      </p>
+      <section class="form-container">
+        <form
+          class="form"
+          data-js="form"
+          aria-labelledby="form-title"
+          aria-describedby="form-description"
+        >
+          <label class="label" for="form-cardQuestion">Your question:</label>
+          <textarea name="form-cardQuestion" id="form-cardQuestion" rows="5">
+          </textarea>
+          <label class="label" for="form-cardAnswer">Your answer:</label>
+          <textarea name="form-cardAnswer" id="form-cardAnswer" rows="5">
+          </textarea
+          ><label for="form-cardTag">Tag:</label>
+          <input type="text" name="form-cardTag" id="form-cardTag" />
+
+          <button type="submit" class="card__button">Submit</button>
+        </form>
       </section>
     </main>
     <footer>
@@ -68,7 +48,7 @@
                 alt="homepage icon"
             /></a>
           </li>
-          <li class="footer-nav__icon--active">
+          <li>
             <a href="/bookmarks/index.html" area-label="Bookmarks page"
               ><img
                 class="footer-nav__icon"
@@ -84,7 +64,7 @@
                 alt="add form"
             /></a>
           </li>
-          <li>
+          <li class="footer-nav__icon">
             <a href="/profile/index.html" area-label="Profile page"
               ><img
                 class="footer-nav__icon"

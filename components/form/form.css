@@ -1,0 +1,34 @@
+.form-container {
+  _width: 90%;
+  padding: 30px 25px 30px;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: -10px;
+  border-radius: 15px 15px 0 0;
+  background-color: #fff;
+  box-shadow: var(--box-shadow);
+}
+
+.form {
+  display: grid;
+  gap: 10px;
+}
+
+textarea {
+  width: 100%;
+}
+
+.form-title {
+  width: 90%;
+  margin: auto;
+  font-size: 22px;
+  margin-bottom: 10px;
+  color: #fff;
+}
+.form-decription {
+  width: 90%;
+  margin: auto;
+  color: #fff;
+  opacity: 40%;
+  font-weight: 300;
+}
