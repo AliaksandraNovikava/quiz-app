@@ -1,19 +1,18 @@
-// const addAnswerButton = document.querySelector(
-//   '[data-js="show-answer-button"]'
-// );
-// const addHiddenAnswer = document.querySelector('[data-js="hidden-answer"]');
-// const addBookmark = document.querySelector('[data-js="bookmark-button"]');
+const answerButton = document.querySelector('[data-js="show-answer-button"]');
+const addAnswer = document.querySelector('[data-js="hidden-answer"]');
+const bookmark = document.querySelector('[data-js="bookmark"]');
 
-// addAnswerButton.addEventListener("click", () => {
-//   addHiddenAnswer.classList.toggle("answer");
-// });
+answerButton.addEventListener("click", function handleClick() {
+  addAnswer.classList.toggle("card__answer");
 
-const darkMode = document.querySelector('[data-js="checkbox"]');
-
-darkMode.addEventListener("click", () => {
-  if (document.body.classList.contains("body-dark")) {
-    document.body.classList.remove("body-dark");
+  const initialText = "Show answer";
+  if (answerButton.textContent.includes(initialText)) {
+    answerButton.textContent = "Hide answer";
   } else {
-    document.body.classList.add("body-dark");
+    answerButton.textContent = initialText;
   }
+});
+
+bookmark.addEventListener("click", () => {
+  bookmark.classList.toggle("card__bookmarked");
 });

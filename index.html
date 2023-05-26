@@ -13,18 +13,22 @@
       <h1>Quiz App</h1>
     </header>
     <main class="main">
-      <section class="main__cards">
+      <section class="main-cards">
         <article class="card">
           <img
             class="card__bookmark"
             src="/assets/bookmark-solid.svg"
             alt="bookmark"
-            data-js="bookmark-button"
+            data-js="bookmark"
           />
           <h2 class="card__question">
             What property flips the axes in flexbox?
           </h2>
-          <button class="card__button" data-js="show-answer-button">
+          <button
+            type="button"
+            class="card__button"
+            data-js="show-answer-button"
+          >
             Show answer
           </button>
           <p class="card__answer" data-js="hidden-answer">flex-direction</p>
@@ -36,15 +40,22 @@
         </article>
         <article class="card">
           <img
-            class="card__bookmark-active"
+            class="card__bookmark"
             src="/assets/bookmark-solid.svg"
             alt="bookmark"
+            data-js="bookmark"
           />
           <h2 class="card__question">
             What property flips the axes in flexbox?
           </h2>
-          <button class="card__button">Show answer</button>
-          <p class="card__answer" hidden>flex-direction</p>
+          <button
+            type="button"
+            class="card__button"
+            data-js="show-answer-button"
+          >
+            Show answer
+          </button>
+          <p class="card__answer" data-js="hidden-answer">flex-direction</p>
           <ul class="tags">
             <li>#html</li>
             <li>#flexbox</li>
@@ -53,15 +64,22 @@
         </article>
         <article class="card">
           <img
-            class="card__bookmark-active"
+            class="card__bookmark"
             src="/assets/bookmark-solid.svg"
             alt="bookmark"
+            data-js="bookmark"
           />
           <h2 class="card__question">
             What property flips the axes in flexbox?
           </h2>
-          <button class="card__button">Show answer</button>
-          <p class="card__answer" hidden>flex-direction</p>
+          <button
+            type="button"
+            class="card__button"
+            data-js="show-answer-button"
+          >
+            Show answer
+          </button>
+          <p class="card__answer" data-js="hidden-answer">flex-direction</p>
           <ul class="tags">
             <li>#html</li>
             <li>#flexbox</li>
@@ -74,7 +92,7 @@
       <nav>
         <ul class="footer-nav">
           <li class="footer-nav__icon--active">
-            <a href="/index.html" area-label="Homepage"
+            <a href="/index.html" aria-label="Homepage"
               ><img
                 class="footer-nav__icon"
                 src="/assets/house-solid.svg"
@@ -82,7 +100,7 @@
             /></a>
           </li>
           <li>
-            <a href="/bookmarks/index.html" area-label="Bookmarks page"
+            <a href="/bookmarks" aria-label="Go to bookmarks page"
               ><img
                 class="footer-nav__icon"
                 src="/assets/bookmark-solid.svg"
@@ -90,7 +108,15 @@
             /></a>
           </li>
           <li>
-            <a href="/profile/index.html" area-label="Profile page"
+            <a href="/form" aria-label="Go to form page"
+              ><img
+                class="footer-nav__icon"
+                src="/assets/circle-plus-solid.svg"
+                alt="add form"
+            /></a>
+          </li>
+          <li>
+            <a href="/profile" aria-label="Go to profile page"
               ><img
                 class="footer-nav__icon"
                 src="/assets/user-solid.svg"

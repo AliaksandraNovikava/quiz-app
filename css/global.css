@@ -4,6 +4,7 @@
 @import "/components/profile/profile.css";
 @import "/components/stats/stats.css";
 @import "/components/settings/settings.css";
+@import "/components/form/form.css";
 
 :root {
   --primary-color: #7665de;
@@ -59,7 +60,7 @@ main {
   padding-bottom: 50px;
   min-height: calc(100vh - 112px);
 }
-.main__cards {
+.main-cards {
   max-width: 1200px;
   margin: auto;
 }
@@ -76,7 +77,7 @@ footer {
 }
 
 @media (min-width: 768px) {
-  .main__cards {
+  .main-cards {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }

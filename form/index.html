@@ -6,55 +6,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/css/global.css" />
     <script src="/js/index.js" defer></script>
-    <title>Quiz App - Bookmarks</title>
+    <title>Quiz App - Form</title>
   </head>
   <body>
     <header>
       <h1>Quiz App</h1>
     </header>
-    <main class="main">
-      <section class="main-cards">
-        <article class="card">
-          <img
-            class="card__bookmark-active"
-            src="/assets/bookmark-solid.svg"
-            alt="bookmark"
-            data-js="bookmark-button"
-          />
-          <h2 class="card__question">
-            What property flips the axes in flexbox?
-          </h2>
-          <button
-            type="button"
-            class="card__button"
-            data-js="show-answer-button"
-          >
-            Show answer
+    <main class="main-form">
+      <h2 class="form__title" id="form-title">Create a new card</h2>
+      <p class="form__decription" id="form-description">
+        Please fill out this form to create a new card.
+      </p>
+      <section class="form-container">
+        <form
+          class="form"
+          data-js="form"
+          aria-labelledby="form__title"
+          aria-describedby="form__description"
+        >
+          <label class="label" for="form-cardQuestion">Your question:</label>
+          <textarea
+            id="form-cardQuestion"
+            name="form-cardQuestion"
+            rows="3"
+          ></textarea>
+          <label class="label" for="form-cardAnswer">Your answer:</label>
+          <textarea
+            id="form-cardAnswer"
+            name="form-cardAnswer"
+            rows="3"
+          ></textarea>
+          <label for="form-cardTag">Tag:</label>
+          <input id="form-cardTag" type="text" name="form-cardTag" />
+
+          <button type="submit" class="card__button" data-js="submit-new-card">
+            Submit
           </button>
-          <p class="card__answer" data-js="hidden-answer">flex-direction</p>
-          <ul class="tags">
-            <li>#html</li>
-            <li>#flexbox</li>
-            <li>#css</li>
-          </ul>
-        </article>
-        <article class="card">
-          <img
-            class="card__bookmark-active"
-            src="/assets/bookmark-solid.svg"
-            alt="bookmark"
-          />
-          <h2 class="card__question">
-            What property flips the axes in flexbox?
-          </h2>
-          <button type="button" class="card__button">Show answer</button>
-          <p class="card__answer" hidden>flex-direction</p>
-          <ul class="tags">
-            <li>#html</li>
-            <li>#flexbox</li>
-            <li>#css</li>
-          </ul>
-        </article>
+        </form>
+      </section>
+      <section class="new-card-container">
+        <h2 class="form__title">Your new cards</h2>
+        <ul data-js="new-cards"></ul>
       </section>
     </main>
     <footer>
@@ -68,7 +60,7 @@
                 alt="homepage icon"
             /></a>
           </li>
-          <li class="footer-nav__icon--active">
+          <li>
             <a href="/bookmarks" aria-label="Go to bookmarks page"
               ><img
                 class="footer-nav__icon"
@@ -84,7 +76,7 @@
                 alt="add form"
             /></a>
           </li>
-          <li>
+          <li class="footer-nav__icon">
             <a href="/profile" aria-label="Go to profile page"
               ><img
                 class="footer-nav__icon"

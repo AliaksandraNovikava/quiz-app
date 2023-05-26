@@ -1,0 +1,49 @@
+.main-form {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.form-container {
+  width: 90%;
+  padding: 30px 25px 30px;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  border-radius: 15px;
+  background-color: #fff;
+  box-shadow: var(--box-shadow);
+}
+
+.form {
+  display: grid;
+  gap: 10px;
+}
+
+.form__title {
+  width: 80%;
+  margin: auto;
+  margin-bottom: 10px;
+  font-size: 22px;
+  color: #fff;
+  text-align: center;
+}
+.form__decription {
+  width: 80%;
+  margin: auto;
+  color: #fff;
+  opacity: 40%;
+  font-weight: 300;
+  text-align: center;
+}
+
+textarea,
+input {
+  padding: 7px;
+}
+
+.new-card-container {
+  width: 90%;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
