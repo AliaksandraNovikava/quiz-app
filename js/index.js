@@ -1,28 +1,18 @@
-const AnswerButton = document.querySelector('[data-js="show-answer-button"]');
+const answerButton = document.querySelector('[data-js="show-answer-button"]');
 const addAnswer = document.querySelector('[data-js="hidden-answer"]');
-const Bookmark = document.querySelector('[data-js="bookmark"]');
+const bookmark = document.querySelector('[data-js="bookmark"]');
 
-AnswerButton.addEventListener("click", function handleClick() {
+answerButton.addEventListener("click", function handleClick() {
   addAnswer.classList.toggle("card__answer");
 
   const initialText = "Show answer";
-  if (AnswerButton.textContent.includes(initialText)) {
-    AnswerButton.textContent = "Hide answer";
+  if (answerButton.textContent.includes(initialText)) {
+    answerButton.textContent = "Hide answer";
   } else {
-    AnswerButton.textContent = initialText;
+    answerButton.textContent = initialText;
   }
 });
 
-Bookmark.addEventListener("click", () => {
-  Bookmark.classList.toggle("card__bookmarked");
+bookmark.addEventListener("click", () => {
+  bookmark.classList.toggle("card__bookmarked");
 });
-
-// const darkMode = document.querySelector('[data-js="checkbox"]');
-
-// darkMode?.addEventListener("click", () => {
-//   if (document.body.classList.contains("body-dark")) {
-//     document.body.classList.remove("body-dark");
-//   } else {
-//     document.body.classList.add("body-dark");
-//   }
-// });
