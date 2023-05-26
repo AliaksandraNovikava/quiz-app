@@ -20,7 +20,7 @@ Bookmark.addEventListener("click", () => {
 
 // const darkMode = document.querySelector('[data-js="checkbox"]');
 
-// darkMode.addEventListener("click", () => {
+// darkMode?.addEventListener("click", () => {
 //   if (document.body.classList.contains("body-dark")) {
 //     document.body.classList.remove("body-dark");
 //   } else {
