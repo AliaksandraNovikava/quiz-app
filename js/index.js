@@ -1,11 +1,11 @@
 const addAnswerButton = document.querySelector(
   '[data-js="show-answer-button"]'
 );
-const addHiddenAnswer = document.querySelector('[data-js="hidden-answer"]');
-const addBookmark = document.querySelector('[data-js="bookmark-button"]');
+const addAnswer = document.querySelector('[data-js="hidden-answer"]');
+const Bookmark = document.querySelector('[data-js="bookmark"]');
 
 addAnswerButton.addEventListener("click", function handleClick() {
-  addHiddenAnswer.classList.toggle("card__answer");
+  addAnswer.classList.toggle("card__answer");
 
   const initialText = "Show answer";
   if (
@@ -17,6 +17,10 @@ addAnswerButton.addEventListener("click", function handleClick() {
   } else {
     addAnswerButton.textContent = initialText;
   }
+});
+
+Bookmark.addEventListener("click", () => {
+  Bookmark.classList.toggle("card__bookmarked");
 });
 
 // const darkMode = document.querySelector('[data-js="checkbox"]');
