@@ -8,6 +8,7 @@
   text-align: center;
   position: relative;
   box-shadow: var(--box-shadow);
+  list-style: none;
 }
 
 .card-dark {
