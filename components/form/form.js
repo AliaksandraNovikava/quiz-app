@@ -32,7 +32,7 @@ form.addEventListener("submit", (event) => {
   const cardData = event.target.elements;
   const question = cardData.formCardQuestion.value;
   const answer = cardData.formCardAnswer.value;
-  const tag = cardData.formCardTag.value;
+  const tag = "#" + cardData.formCardTag.value;
 
   event.target.reset();
 

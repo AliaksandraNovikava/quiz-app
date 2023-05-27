@@ -4,17 +4,12 @@
   margin: auto;
   margin-bottom: 40px;
   border-radius: 15px;
-  background-color: #fff;
+  background-color: var(--white-background);
+  color: var(--text-color);
   text-align: center;
   position: relative;
   box-shadow: var(--box-shadow);
   list-style: none;
-}
-
-.card-dark {
-  background-color: #4c3874;
-  color: #fff;
-  box-shadow: none;
 }
 
 .card__bookmark,
