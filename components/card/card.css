@@ -50,7 +50,7 @@
   justify-content: center;
   flex-wrap: wrap;
 }
-.tags li {
+.tags-li {
   display: inline;
   padding: 10px;
   margin-right: 5px;
