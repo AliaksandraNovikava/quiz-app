@@ -29,14 +29,24 @@
           <textarea
             id="form-cardQuestion"
             name="formCardQuestion"
+            data-js="question-input"
             rows="3"
+            maxlength="150"
           ></textarea>
+          <p class="input-conter">
+            <span data-js="input-counter-question"></span> characters left
+          </p>
           <label class="label" for="form-cardAnswer">Your answer:</label>
           <textarea
             id="form-cardAnswer"
             name="formCardAnswer"
+            data-js="answer-input"
             rows="3"
+            maxlength="150"
           ></textarea>
+          <p class="input-conter">
+            <span data-js="input-counter-answer"></span> characters left
+          </p>
           <label for="form-cardTag">Tag:</label>
           <input id="form-cardTag" type="text" name="formCardTag" />
 

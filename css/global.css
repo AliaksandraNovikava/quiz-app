@@ -22,12 +22,14 @@
   _--dark-background-color: #33264e;
   --box-shadow: #5042ab 0px 7px 29px 0px;
   --header-box-shadow: #785b80aa 0px 7px 29px 0px;
+  --footer-shadow: #838383aa 0px 7px 29px 0px;
 }
 
 .dark {
   --gradient: #33264e;
   --secondary-color: #3c2c5b;
   --header-box-shadow: none;
+  --footer-shadow: none;
   --white-background: #4c3874;
   --box-shadow: none;
   --text-color: #fff;
@@ -76,7 +78,7 @@ footer {
   position: fixed;
   bottom: 0;
   width: 100%;
-  box-shadow: #838383aa 0px 7px 29px 0px;
+  box-shadow: var(--footer-shadow);
 }
 
 @media (min-width: 768px) {
