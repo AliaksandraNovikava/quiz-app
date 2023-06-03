@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/css/global.css" />
     <script src="/js/index.js" defer></script>
+    <script src="/components/form/form.js" defer></script>
     <title>Quiz App - Form</title>
   </head>
   <body>
@@ -27,17 +28,27 @@
           <label class="label" for="form-cardQuestion">Your question:</label>
           <textarea
             id="form-cardQuestion"
-            name="form-cardQuestion"
+            name="formCardQuestion"
+            data-js="question-input"
             rows="3"
+            maxlength="150"
           ></textarea>
+          <p class="input-conter">
+            <span data-js="input-counter-question"></span> characters left
+          </p>
           <label class="label" for="form-cardAnswer">Your answer:</label>
           <textarea
             id="form-cardAnswer"
-            name="form-cardAnswer"
+            name="formCardAnswer"
+            data-js="answer-input"
             rows="3"
+            maxlength="150"
           ></textarea>
+          <p class="input-conter">
+            <span data-js="input-counter-answer"></span> characters left
+          </p>
           <label for="form-cardTag">Tag:</label>
-          <input id="form-cardTag" type="text" name="form-cardTag" />
+          <input id="form-cardTag" type="text" name="formCardTag" />
 
           <button type="submit" class="card__button" data-js="submit-new-card">
             Submit
@@ -46,7 +57,7 @@
       </section>
       <section class="new-card-container">
         <h2 class="form__title">Your new cards</h2>
-        <ul data-js="new-cards"></ul>
+        <ul data-js="new-cards-list"></ul>
       </section>
     </main>
     <footer>

@@ -10,7 +10,7 @@
   margin-top: 20px;
   margin-bottom: 30px;
   border-radius: 15px;
-  background-color: #fff;
+  background-color: var(--white-background);
   box-shadow: var(--box-shadow);
 }
 
@@ -46,4 +46,9 @@ input {
   margin: auto;
   margin-top: 20px;
   margin-bottom: 50px;
+}
+
+.input-conter {
+  text-align: right;
+  font-size: 12px;
 }

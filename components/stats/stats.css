@@ -7,7 +7,7 @@
   margin: auto;
   margin-bottom: 15px;
   border-radius: 15px;
-  background-color: #fff;
+  background-color: var(--white-background);
   text-align: center;
   position: relative;
   box-shadow: var(--box-shadow);
@@ -21,10 +21,12 @@
   width: 80%;
   text-align: left;
   padding-left: 10px;
+  color: var(--text-color);
 }
 
 .faded-text {
   text-transform: uppercase;
+  color: var(--text-color);
   opacity: 40%;
   font-weight: 300;
   text-align: left;
